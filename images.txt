@@ -13,7 +13,6 @@
 #docker.io/rancher/mirrored-metrics-server:v0.7.2
 #docker.io/rancher/mirrored-pause:3.6
 #minio/minio
-#postgres
 #redis
 #mysql
 
@@ -26,12 +25,15 @@
 #--platform=linux/arm64 docker.io/rancher/mirrored-metrics-server:v0.7.2
 #--platform=linux/arm64 docker.io/rancher/mirrored-pause:3.6
 #--platform=linux/arm64 minio/minio
-#--platform=linux/arm64 postgres
 #--platform=linux/arm64 redis
 #--platform=linux/arm64 mysql
 
-registry.k8s.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
---platform=linux/arm64 registry.k8s.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
+#registry.k8s.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
+#--platform=linux/arm64 registry.k8s.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
+
+docker.io/bitnami/postgresql:17.5.0-debian-12-r16
+--platform=linux/arm64 docker.io/bitnami/postgresql:17.5.0-debian-12-r16
+
 
 
 
