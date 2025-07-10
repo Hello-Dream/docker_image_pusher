@@ -14,9 +14,6 @@
 #docker.io/rancher/mirrored-library-traefik:3.3.6
 #docker.io/rancher/mirrored-metrics-server:v0.7.2
 #docker.io/rancher/mirrored-pause:3.6
-#minio/minio
-#redis
-#mysql
 
 #--platform=linux/arm64 docker.io/rancher/klipper-helm:v0.9.7-build20250616
 #--platform=linux/arm64 docker.io/rancher/klipper-lb:v0.4.13
@@ -26,9 +23,7 @@
 #--platform=linux/arm64 docker.io/rancher/mirrored-library-traefik:3.3.6
 #--platform=linux/arm64 docker.io/rancher/mirrored-metrics-server:v0.7.2
 #--platform=linux/arm64 docker.io/rancher/mirrored-pause:3.6
-#--platform=linux/arm64 minio/minio
-#--platform=linux/arm64 redis
-#--platform=linux/arm64 mysql
+
 
 #registry.k8s.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
 #--platform=linux/arm64 registry.k8s.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
@@ -48,10 +43,18 @@
 #docker.io/bitnami/minio-client:2025.5.21-debian-12-r7
 #--platform=linux/arm64 docker.io/bitnami/minio-client:2025.5.21-debian-12-r7
 
-docker.io/bitnami/minio-object-browser:2.0.2-debian-12-r1
---platform=linux/arm64 docker.io/bitnami/minio-object-browser:2.0.2-debian-12-r1
+#docker.io/bitnami/minio-object-browser:2.0.2-debian-12-r1
+#--platform=linux/arm64 docker.io/bitnami/minio-object-browser:2.0.2-debian-12-r1
 
+docker.io/bitnami/redis:8.0.3-debian-12-r1
+--platform=linux/arm64 docker.io/bitnami/redis:8.0.3-debian-12-r1
 
+docker.io/bitnami/redis-sentinel:8.0.3-debian-12-r1
+--platform=linux/arm64 docker.io/bitnami/redis-sentinel:8.0.3-debian-12-r1
 
+docker.io/bitnami/redis-exporter:1.74.0-debian-12-r2
+--platform=linux/arm64 docker.io/bitnami/redis-exporter:1.74.0-debian-12-r2
 
+docker.io/bitnami/kubectl:1.33.2-debian-12-r3
+--platform=linux/arm64 docker.io/bitnami/kubectl:1.33.2-debian-12-r3
 
